@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<a lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>To to jo</title>
 </head>
-<body>
+<br>
 <p>Hello World!</p>
 
 {% block content %}
-{{ output }}
-<p>- - - - - - -</p>
-
+{% for t in output_list %}
+<a href="/dic/{{ t.id }}"/>{{t.slowo_slowo}}</a></br>
+{% endfor %}
 {% endblock %}
 
+<p>- | - | - | - | - | - |</p>
+<p> -</p>
 </body>
 </html>
